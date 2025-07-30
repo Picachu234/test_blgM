@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+hr {
+    margin-top: 8px;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: #3d4047;
+}
+
+header {
+    padding-top: 25px;
+}
+
+header nav.other__profile__nav {
+    float: right;
+    width: 25%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul.other__menu li a::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 50%;
+    border-radius: 10px;
+    background: #ad1010;
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+
+header nav ul.other__menu li a:hover::after {
+    background: #f04848;
+}
+
+header nav ul li a:hover::after {
+    background: #f04848;
+    transition: all 600ms ease;
+    transform: scale(1.1);
+}
+
+header nav ul li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header .logo--name {
+    padding-left: 15px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.wrapper {
+    background: #232529;
+    min-height: 834px;
+    width: 100%;
+    height: 100%;
+}
+
+.main__container__register {
+    display: flex;
+}
+
+.register__container {
+    margin-top: 50px;
+    padding-left: 570px;
+}
+
+.register__content {
+    width: 400px;
+    height: 700px;
+    background-color: #8a8a8a;
+    border-radius: 16px;
+    border: 1px solid #8a8a8a;
+    box-shadow: 3px 3px 6px rgba(0.1, 0, 0, 0.1);
+}
+
+.nav--register {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.register--info nav ul {
+    list-style: none;
+}
+
+.register--info nav ul li {
+    margin-top: 15px;
+    color: #3d4047;
+}
+
+.register--info nav ul li label {
+    border-radius: 10px;
+}
+
+.register--info nav ul li input {
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    padding: 0 16px;
+    margin: 8px 0;
+    background: #2d3035;
+    color: #fff;
+    border: 1px solid #4a4e57;
+    border-radius: 12px;
+    outline: none;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register--info nav ul li input:focus {
+    border-color: #646cff;
+    box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+.register--info nav ul li input:hover {
+    background: #363940;
+    border-color: #5a626d;
+}
+
+.register--info nav ul li input::placeholder {
+    color: #8a8f99;
+    opacity: 1;
+}
+
+.hr--register {
+    margin-top: 50px;
+    margin-left: 18px;
+    margin-bottom: 6px;
+    width: 90%;
+    color: #262626;
+}
+
+.p--register {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    cursor: default;
+    color: #3d4047;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+p.p__login {
+    text-align: center;
+    color: #3d4047;
+}
+
+a.additional__content {
+    margin-left: 3px;
+    color: #ad1010;
+}
+
+a.additional__content:hover {
+    color: #f04848;
+    transition: all 400ms ease;
+    text-decoration: underline;
+}
+
+.btn__register {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 110px;
+    background: #ababab;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #fff;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.25s ease;
+}
+
+.btn__register::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3d4047;
+    z-index: -1;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.btn__register:hover::before {
+    width: 0;
+    left: 50%;
+}
+
+.register__mistake {
+    color: #ad1010;
+}

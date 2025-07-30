@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <noscript>JavaScript отключён в браузере</noscript>
+    <title>My Blog Profile</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <span class="logo--name"><a href="index.html">MyBloguE</a></span>
+        <nav class="other__profile__nav">
+            <ul class="other__menu">
+                <li><a href="entrance.html">Создать пост</a></li>
+                <li><a href="entrance.html">Профиль</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <div class="main__container">
+        <div class="register__container">
+            <div class="auto__content">
+                <div class="register--info">
+                    <p class="p--register">Вход</p>
+                    <form class="entrance__form" action="" method="post" id="entrance__form">
+                        <nav class="nav--register">
+                            <ul>
+                                <li id="li--mistake" class="register__mistake"></li>
+                                <li>Логин <label for="nickname"></label><input type="text" id="nickname" placeholder="login" name="login"/></li>
+                                <li>Пароль<label for="password_user"></label><input type="password" id="password_user" placeholder="password" name="password"/></li>
+                            </ul>
+                        </nav>
+                        <button type="submit" class="btn__register" id="button_register">Войти</button>
+                    </form>
+                </div>
+                <hr class="hr--register">
+                <p class="p__login">Нет аккаунта?<a class="additional__content" href="register.html"> Регистрация</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="codeJS/isentrance.js"></script>
+<script src="codeJS/entranceUsers.js"></script>
+</body>
+</html>
