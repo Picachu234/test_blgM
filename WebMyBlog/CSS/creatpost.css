@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,800&display=swap');
+
+.post--container {
+    margin-left: 25px;
+    border: 1px solid #4a4e57;
+    font-size: 15px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #ffffff;
+    background: #2d3035;
+    padding: 6px;
+    border-radius: 10px;
+    height: auto;
+    width: 850px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
